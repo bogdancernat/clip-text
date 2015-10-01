@@ -1,0 +1,43 @@
+
+.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}
+.clip-text:before {
+    z-index: -2;
+    top: 0.1em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+/*    background-image: inherit;*/
+    background-repeat: no-repeat;
+/*
+    -webkit-background-size: cover;
+    background-size: cover;
+*/
+}
+.clip-text:after {
+    z-index: -1;
+    top: .2em;
+    right: .2em;
+    bottom: .2em;
+    left: .2em;
+/*    background-color: #fff;*/
+}
+.clip-text {
+    text-align: center;
+    font-size: 20vw;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    color: #000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url('https://i.imgur.com/LCcWcee.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
